@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UISkill : MonoBehaviour {
 
 	public Image skillIconImage;
-	public Image cooltimeBlind;
+	public GameObject cooltimeBlind;
 	float _cooltime;
 	public float cooltime	//0 ~ 1 percent
 	{
@@ -37,13 +37,16 @@ public class UISkill : MonoBehaviour {
 		cooltimeBlindOrgHeight = cooltimeBlind.transform.lossyScale.y * cooltimeBlindHeightPerUnit;
 		cooltimeBlindMinY = cooltimeBlind.transform.position.y - cooltimeBlindOrgHeight / 2;
 		cooltimeBlindOrgScaleY = cooltimeBlind.transform.localScale.y;
-		cooltime = 0.7f;
+	}
+	void Update()
+	{
+		UpdateUI();
 	}
 	public void UpdateUI()
 	{
 		float newY = cooltimeBlindMinY + cooltimeBlindOrgHeight * cooltime / 2;
 		float newScaleY = cooltimeBlindOrgScaleY * cooltime;
-		cooltimeBlind.transform.position = new Vector3(cooltimeBlind.transform.position.x, newY);
-		cooltimeBlind.transform.localScale = new Vector3(cooltimeBlind.transform.localScale.x, newScaleY);
+		cooltimeBlind.transform.position = new Vector3(cooltimeBlind.transform.position.x, newY, 0);
+		cooltimeBlind.transform.localScale = new Vector3(cooltimeBlind.transform.localScale.x, newScaleY, 0);
 	}
 }

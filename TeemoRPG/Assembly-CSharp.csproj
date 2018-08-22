@@ -53,20 +53,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Camera\TraceCamera.cs" />
+     <Compile Include="Assets\Script\Game\AI\BT.cs" />
+     <Compile Include="Assets\Script\Game\Entity\Bullet.cs" />
+     <Compile Include="Assets\Script\Game\Entity\Entity.cs" />
+     <Compile Include="Assets\Script\Game\Entity\Frog.cs" />
+     <Compile Include="Assets\Script\Game\Entity\Player.cs" />
+     <Compile Include="Assets\Script\Game\GameManager.cs" />
+     <Compile Include="Assets\Script\Game\Item\Item.cs" />
+     <Compile Include="Assets\Script\Game\Setting.cs" />
+     <Compile Include="Assets\Script\Game\Skill\SkillData.cs" />
+     <Compile Include="Assets\Script\Game\Skill\SkillManager.cs" />
+     <Compile Include="Assets\Script\Game\Skill\SkillReader.cs" />
+     <Compile Include="Assets\Script\Game\Skill\Skills\FrogGeneralAttack.cs" />
+     <Compile Include="Assets\Script\Game\Skill\Skills\PlayerGeneralAttack.cs" />
+     <Compile Include="Assets\Script\Game\Util\Spawner.cs" />
+     <Compile Include="Assets\Script\Input\PlayerContoller.cs" />
+     <Compile Include="Assets\Script\UI\DamageIndicator.cs" />
      <Compile Include="Assets\Script\UI\UIBar.cs" />
+     <Compile Include="Assets\Script\UI\UIEntity.cs" />
      <Compile Include="Assets\Script\UI\UIManager.cs" />
      <Compile Include="Assets\Script\UI\UISkill.cs" />
+     <Compile Include="Assets\Script\Util.cs\Delay.cs" />
+     <Compile Include="Assets\Script\Util.cs\ObjectPool.cs" />
+     <Compile Include="Assets\Script\Util.cs\ObjectPoolManager.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/chickening/Documents/TeemoRPG/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/chickening/Documents/GitHub/TeemoRPG/TeemoRPG/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/chickening/Documents/TeemoRPG/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/chickening/Documents/GitHub/TeemoRPG/TeemoRPG/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/chickening/Documents/TeemoRPG/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/chickening/Documents/GitHub/TeemoRPG/TeemoRPG/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/chickening/Documents/TeemoRPG/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/chickening/Documents/GitHub/TeemoRPG/TeemoRPG/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

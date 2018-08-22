@@ -15,8 +15,8 @@ TagManager:
   - 
   - Background
   - Obstacle
-  - 
-  - 
+  - Entity
+  - Damager
   - 
   - 
   - 
@@ -41,9 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BackGround
+  - name: Background
     uniqueID: 3001762443
+    locked: 0
+  - name: Damager
+    uniqueID: 2855107443
+    locked: 0
+  - name: Charactor
+    uniqueID: 2648269723
     locked: 0
   - name: Obstacle
     uniqueID: 260899781
+    locked: 0
+  - name: UI
+    uniqueID: 2450937565
     locked: 0

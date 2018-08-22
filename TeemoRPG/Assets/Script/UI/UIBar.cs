@@ -37,8 +37,8 @@ public class UIBar : MonoBehaviour {
 	{
 		RectTransform gaugeRectTransfrom = gauge.GetComponent<RectTransform>();
 		float gaugeWidthPerUnit= gaugeRectTransfrom.rect.width;
-		gaugeOrgWidth = gauge.transform.lossyScale.x * gaugeWidthPerUnit;
-		gaugeMinX = gauge.transform.position.x - gaugeOrgWidth / 2;
+		gaugeOrgWidth = gauge.transform.localScale.x * gaugeWidthPerUnit;
+		gaugeMinX = gauge.transform.localPosition.x - gaugeOrgWidth / 2;
 		gaugeOrgScaleX = gauge.transform.localScale.x;
 		maxValue = 100;
 		value = 30;
@@ -49,9 +49,10 @@ public class UIBar : MonoBehaviour {
 
 		float newGaugeX = gaugeMinX + percent * gaugeOrgWidth / 2;
 		float newScaleX = gaugeOrgScaleX * percent;
-		gauge.transform.position = new Vector3(newGaugeX ,gauge.transform.position.y);
+		gauge.transform.localPosition = new Vector3(newGaugeX ,gauge.transform.localPosition.y);
 		gauge.transform.localScale = new Vector3(newScaleX, gauge.transform.localScale.y);
 
-		textNum.text = value.ToString() + " / " + maxValue;
+		if(textNum != null)
+			textNum.text = value.ToString() + " / " + maxValue;
 	}
 }
